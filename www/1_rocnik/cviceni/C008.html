@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C008</title>
+    <style>
+        div{
+            color: gray;
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .prvni{
+            background-color: aqua;
+            font-size: 20px;
+            font-weight: 800;
+            font-style: italic;
+            text-transform: capitalize;
+            text-decoration: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 650px;
+            height: 650px;
+        
+        }
+        .druhy{
+            color: red;
+            /*width a height, pokud není děláno úmyslně, by měli mít vždycky velikost uspůsobenou obsahu*/
+            width: auto; /*nastavení šířky objektu*/
+            height: auto; /*nastavení výšky objektu*/
+            /*pokud je zadán pouze height tak se druhý dopočítá;
+            Pokud je zadán pouze width, tak se druhý dopočítá*/
+            background-color:green ;
+            border: 2px solid black; /*shorthand pro rámeček prvku - šířka rámečku, styl rámečku, barva rámečku*/
+            border-radius: 5%; /*zaoblení rámečku - v px nebo od 0% do 50%*/
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 48px;
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="prvni">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias tempore eum natus, dolorum dicta veritatis corporis quam voluptates sit excepturi iusto maiores praesentium odio nihil sequi, distinctio fugit accusantium repellat!
+    </div>
+    <div class="druhy">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores asperiores fugit nihil? Doloremque sequi voluptatibus ipsa omnis dolores minima quo quod fugiat distinctio sint eos culpa, ipsam commodi repellendus perferendis!
+    </div>
+</body>
+</html>

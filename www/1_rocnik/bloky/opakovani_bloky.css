@@ -1,0 +1,31 @@
+span{
+    font-weight: 900;
+    font-size: 50px; /*em, rem*/
+    text-align: center;
+}
+body{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: darkgray;
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: center;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    width: 80vw;
+    border: 5px solid black;
+}
+.barva{
+    width: 200px;
+    height: 200px;background-color: green;
+    border-radius: 50%;
+}
+.text{
+    width: 33%;
+}
+.stred{
+    display: flex;
+    align-items: center;
+}

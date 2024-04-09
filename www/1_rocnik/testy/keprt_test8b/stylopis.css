@@ -1,0 +1,34 @@
+.galerie{
+    width: 500px;
+    background-color: #865fcf;
+    border: 10px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img{
+    width: 40%;
+    height: 40%;
+}
+
+.pozadi{
+    width: 500px;
+    height: 500px;
+    background-color: #ddb55d;
+    border: 10px solid black;
+    margin: 10px;
+}
+
+.pozadi:hover{
+    background-image: url(galerie/slunce.png);
+    background-size: 300px;
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}

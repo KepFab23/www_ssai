@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test 9</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+        }
+        caption{
+            text-align: center;
+        }
+        table{
+    
+            margin-top: 50px;
+            border-collapse:collapse;
+            border: 2px solid black;
+            font-size: 20px;
+        }
+
+        tr{
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+    
+        .polevky{
+            background-color: yellow;
+        }
+        .jidla{
+            background-color: red;
+        }
+        .specialni{
+            font-weight: 800;
+        }
+    </style>
+</head>
+<body>
+    <caption>Jídelní lístek</caption>
+    <table>
+        <tr  class="polevky">
+            <th colspan="2">Polévky</th>
+        </tr>
+        <tr  class="polevky">
+            <td>Hovězí vývar s nudlemi</td>
+            <td>29 Kč</td>
+        </tr>
+        <tr  class="polevky">
+            <td>Krém z červené čočky</td>
+            <td>29 Kč</td>
+        </tr>
+        <tr class="polevky">
+            <td>Dršťková</td>
+            <td>29 Kč</td>
+        </tr>
+        <tr class="jidla">
+            <th colspan="2">Hlavní chody</th>
+        </tr>
+        <tr class="jidla">
+            <td>Smažený eidam s hranolkami</td>
+            <td>99 Kč</td>
+        </tr>
+        <tr class="jidla">
+            <td>Grilovaná kuřecí prsa s pečenými brambory</td>
+            <td>99 Kč</td>
+        </tr>
+        <tr class="specialni">
+            <th>Polévky jsou v ceně hlavního chodu</th>
+        </tr>
+        <tr class="specialni">
+            <th>Pro děti do 10 let sleva 50%.</th>
+        </tr>
+    </table>
+</body>
+</html>

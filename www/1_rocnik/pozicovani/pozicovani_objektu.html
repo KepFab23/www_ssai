@@ -1,0 +1,40 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Pozicování objektů</title>
+    <style>
+        h3{
+            position: absolute; /*Absolute = Objekt je pevně zarovnán do stránky a neřeší ostatní prvky => neobtéká*/
+            background-color: red;
+            /*--Zadávání souřadnic----*/
+            top: 20px; /*Vzdálenost od daného okraje těla stránky*/ /*hodnoty top, left, right, bottom*/
+            }
+        h1{
+            position: sticky; /*sticky = objekt je zarovnán do stránky, ale ostatní prvky ho obtékají důležité pro CMS*/
+        }
+        div{
+            position: relative; /*relative = objekt je zarovnán do stránky a ostatní prvky ho obtékají*/
+            /*DISPLAY FLEX*/
+            display: flex; /*dovoluje vytvářet jednoduchý responzivní design a pozicovat objekty*/
+            /*--Tyto atributy fungují pouze v případě, že prvek má hodnotu Display:flex----*/
+            justify-content: center; /*zarovnání objektů podle osy X = space-around, space-between, flex-start, flex-end, space-evenly*/
+            align-items: center; /*zarovnání objektů podle osy Y = flex-start, flex,end, center, stretch, baseline*/
+            flex-direction: row; /*směr objektů - column, row*/
+        }
+        /*display: none, grid, block, flex*/
+        .neviditelny{
+            display: none; /*objekt je skrytý*/
+        }
+    </style>
+<head>
+<body>
+    <h1>Pozicování objektů</h1>
+    <div>
+        <h2>Ukázka zarovnání</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit earum sunt, nisi impedit reiciendis nesciunt minus, error molestias velit dolores culpa. Rerum, dolores vitae exercitationem accusamus dolor iure fugit hic?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem assumenda consequatur consequuntur veritatis voluptatum quam eveniet hic. Officiis, quis reiciendis ullam, beatae officia, repellendus libero eveniet cupiditate neque voluptatum iste!</p>
+    </div>
+    <h3>Absolutní pozice</h3>
+    <p class="neviditelny" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam neque molestiae ab voluptatum exercitationem. Earum eligendi quidem iusto? Nihil cum, assumenda facilis quibusdam quo possimus? Pariatur vitae aperiam cupiditate dolore?</p>
+</body>
+</html>

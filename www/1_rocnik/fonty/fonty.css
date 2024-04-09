@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+body{
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+/*Přidání staženého fontu pomocí font-face*/
+@font-face {
+    font-family: "Roboto"; /*Zde stanovuje název fontu*/
+    src: url(Roboto-Medium.ttf);
+}

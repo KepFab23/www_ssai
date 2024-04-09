@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Obrázky v pozadí</title>
+    <style>
+        .obrazek{
+            background-image: url("Lev.jpg");
+            /*nepraktické pro menší objekty*/
+        }
+        .lev{
+            width: 500px;
+            height: 500px;
+            background-color: black;
+            background-image: url("Lev.jpg");
+            background-position: center; /*posun obrázku na pozadí*/
+            /*zapisuje se slovně - top, left, right, center nebo číselně - 25% 75% etc*/
+            background-repeat: no-repeat; /*opakování obrázku v případě možnosti - no repeat, repeat, repeat-y*/
+            opacity: 30%; /*průhlednost obrázku*/
+            background-size: 500px; /*mění velikost obrázku pozadí*/
+            scale: auto; /*škálování prvku*/
+            
+        }
+
+        .lev:hover{ /*změna obrázku při přejetí myší*/
+            width: 600px;
+            height: 600px;
+            opacity: 50%;
+            background-size: 600px;
+            background-color: red;
+            background-image: url("Kytka.jpg");
+            scale: auto;
+            transition: 0.5s;
+        }
+    </style>
+</head>
+<body>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed accusantium saepe deserunt debitis ducimus quod incidunt, quaerat unde excepturi sequi provident eligendi adipisci necessitatibus? Suscipit sed sapiente commodi id eaque.
+    </p>
+    <p class="obrazek">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae officiis quam similique porro doloremque nam saepe molestiae dolorum. Harum enim odio nobis unde explicabo? Numquam facere architecto soluta obcaecati delectus!
+    </p>
+    <div class="lev">
+
+    </div>
+</body>
+</html>
